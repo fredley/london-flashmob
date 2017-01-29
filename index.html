@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>London Flashmob</title>
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <style>
       html {
-        background: url(http://i.imgur.com/zCNGJog.jpg) no-repeat center center fixed;
+        background: url('bg.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -22,6 +30,28 @@
       body{
         background: transparent;
       }
+      #space{
+        background:rgb(255,133,52);
+        text-align: center;
+        font-size:150%;
+        padding:10px 0;
+        margin:10px 0;
+        font-family: 'Chewy', cursive;
+      }
+      #space a{
+        color: #000 !important;
+      }
+      .fa{ color: #fff;
+      width: 50px;
+      height: 50px;
+      line-height: 52px;
+      font-size: 25px;
+      border-radius: 50px;
+      margin: 0 5px;
+      box-shadow: 0 5px 5px #000; }
+      .fa-facebook{ background: #4060A5; }
+      .fa-twitter{ background: #00ABE3; }
+      .fa-youtube{ background: #bb0000; }
       #darken{
         top:0;
         left:0;
@@ -151,24 +181,32 @@
         </form>
         </div>
         <!--End mc_embed_signup-->
-      </div>
-      <div class='col-md-4 margin'>
-        <h2>About us</h2>
-        <p>London Flashmob is the leading organiser of spontaneous events in the city. <a href='https://www.facebook.com/LondonFlashMob'>Become a part of it</a> or <a href='#' class='mail'>enquire about organising one</a> today.</p>
-      </div>
-      <div class='col-md-4'>
-        <h2>See us in action</h2>
-        <p>Get all the latest updates on <a href='https://www.facebook.com/LondonFlashMob'>Facebook</a>, <a href='https://twitter.com/uk_flashmob'>Twitter</a> and <a href='https://www.youtube.com/user/UKFlashmob'>YouTube</a></p>
-        <div id="fb">
+        <!-- <div id="fb">
           <div class="fb-like" data-href="https://www.facebook.com/LondonFlashMob" data-width="180" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
         </div>
         <a class="twitter-timeline" href="https://twitter.com/UK_Flashmob"
         data-widget-id="562308958862733313"
         data-chrome="nofooter noborders"
         data-tweet-limit="1"
-        ></a>
+        ></a> -->
+      </div>
+      <div class='col-md-4 margin'>
+        <h2>About us</h2>
+        <p>London Flashmob is the leading organiser of spontaneous events in the city. <a href='https://www.facebook.com/LondonFlashMob'>Become a part of it</a> or <a href='#' class='mail'>enquire about organising one</a> today.</p>
+      </div>
+      <div class='col-md-4'>
+        <h2>Current Project</h2>
+        <div id="space"><a href="http://space-hopper-challenge.co.uk">Space Hopper Challenge!</a></div>
+        <p>We are organising the <a href="http://space-hopper-challenge.co.uk">Space Hopper Challenge</a>: an attempt to beat the world record for the most people simultaneously bouncing on space hoppers!</p>
+        <p>Head over to the <a href="http://space-hopper-challenge.co.uk">Space Hopper Challenge event page</a> or <a href="https://www.facebook.com/events/1761327004118570/">Facebook page</a> to learn more and sign up!</p>
+
         </div>
     </div>
-    <div id='footer'><a href='about.html'>Who are we?</a> | <a href='#' class='mail'>Get a flashmob</a> | <a href='press.html'>Press</a></div>
+    <div id='footer'>
+      <p>
+        <a href='https://www.facebook.com/LondonFlashMob'><i class="fa fa-facebook"></i></a> <a href='https://twitter.com/uk_flashmob'><i class="fa fa-twitter"></i></a> <a href='https://www.youtube.com/user/UKFlashmob'><i class="fa fa-youtube"></i></a></p>
+      <p>
+      <a href='about.html'>Who are we?</a> | <a href='#' class='mail'>Get a flashmob</a> | <a href='press.html'>Press</a></p>
+    </div>
   </body>
 </html>
